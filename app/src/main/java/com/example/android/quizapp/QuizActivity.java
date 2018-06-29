@@ -39,6 +39,9 @@ public class QuizActivity extends AppCompatActivity {
         textView.setTypeface(typeface);
     }
 
+    /* This method checks if the user checked the correct answers for question one,
+     * if correct the score add a point */
+
     private void questionOneRadioCheck() {
         RadioButton tRadioButton = (RadioButton) findViewById(R.id.radio_true);
         RadioButton fRadioButton = (RadioButton) findViewById(R.id.radio_false);
@@ -50,6 +53,9 @@ public class QuizActivity extends AppCompatActivity {
             score += 0;
         }
     }
+
+    /* This method checks if the user checked the correct answers for question two,
+     * if correct the score add a point */
 
 private void questionTwoCheck() {
         CheckBox twoCheckBoxOne = (CheckBox) findViewById(R.id.question_two_check_one);
@@ -64,6 +70,9 @@ private void questionTwoCheck() {
             score += 1;
         }
     }
+
+    /* This method checks if the user checked the correct answers for question three,
+     * if correct the score add a point */
 
     private void questionThreeRadioCheck() {
         RadioButton q3rd1 = (RadioButton) findViewById(R.id.question_three_radio_one);
@@ -82,6 +91,9 @@ private void questionTwoCheck() {
         }
     }
 
+    /* This method checks if the user checked the correct answers for question four,
+     * if correct the score add a point */
+
     private void questionFourRadioCheck() {
         RadioButton q4rd1 = (RadioButton) findViewById(R.id.question_four_radio_one);
         RadioButton q4rd2 = (RadioButton) findViewById(R.id.question_four_radio_two);
@@ -97,6 +109,9 @@ private void questionTwoCheck() {
         }
     }
 
+    /* This method checks if the user checked the correct answers for question five,
+     * if correct the score add a point */
+
     private void questionFiveEditText() {
         EditText inputText = (EditText) findViewById(R.id.input_answer);
         if (inputText.getText().toString().equals(getString(R.string.questionFiveAnswer))) {
@@ -105,6 +120,9 @@ private void questionTwoCheck() {
             score += 0;
         }
     }
+
+    /* This method checks if the user checked the correct answers for question six,
+     * if correct the score add a point */
 
     private void questionSixRadioCheck() {
         RadioButton q6rd1 = (RadioButton) findViewById(R.id.question_six_radio_one);
@@ -121,6 +139,9 @@ private void questionTwoCheck() {
         }
     }
 
+    /* This method checks if the user checked the correct answers for question seven,
+     * if correct the score add a point */
+
     private void questionSevenRadioCheck() {
         RadioButton RadioButtonTrue = (RadioButton) findViewById(R.id.seven_radio_true);
         RadioButton RadioButtonFalse = (RadioButton) findViewById(R.id.seven_radio_false);
@@ -133,6 +154,9 @@ private void questionTwoCheck() {
         }
     }
 
+    /* This method checks if the user checked the correct answers for question eight,
+     * if correct the score add a point */
+
     private void questionEightCheck() {
         CheckBox eightCheckBoxOne = (CheckBox) findViewById(R.id.question_eight_check_one);
         CheckBox eightCheckBoxTwo = (CheckBox) findViewById(R.id.question_eight_check_two);
@@ -144,6 +168,9 @@ private void questionTwoCheck() {
             score += 0;
         }
     }
+
+    /* This method checks if the user checked the correct answers for question nine,
+     * if correct the score add a point */
 
     private void questionNineRadioCheck() {
         RadioButton q9rd1 = (RadioButton) findViewById(R.id.question_nine_radio_one);
@@ -160,6 +187,9 @@ private void questionTwoCheck() {
         }
     }
 
+    /* This method checks if the user checked the correct answers for question ten,
+     * if correct the score add a point */
+
     private void questionTenRadioCheck() {
         RadioButton q10rd1 = (RadioButton) findViewById(R.id.question_ten_radio_one);
         RadioButton q10rd2 = (RadioButton) findViewById(R.id.question_ten_radio_two);
@@ -175,6 +205,8 @@ private void questionTwoCheck() {
         }
     }
 
+    /* This method add all the scores for the previous questions */
+
     private void addScores() {
         score = 0;
         questionOneRadioCheck();
@@ -188,6 +220,10 @@ private void questionTwoCheck() {
         questionNineRadioCheck();
         questionTenRadioCheck();
     }
+
+
+    /* This method shows a toast that displays the scores added by the addScores method and
+    * starts the activity afresh */
 
     public void checkScores(View v) {
         addScores();
