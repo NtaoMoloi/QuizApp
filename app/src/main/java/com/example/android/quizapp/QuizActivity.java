@@ -15,17 +15,6 @@ import android.widget.Toast;
 public class QuizActivity extends AppCompatActivity {
 
     int score = 0;
-
-    CardView card_one;
-    CardView card_two;
-    CardView card_three;
-    CardView card_four;
-    CardView card_five;
-    CardView card_six;
-    CardView card_seven;
-    CardView card_eight;
-    CardView card_nine;
-    CardView card_ten;
     Intent initiateIntent;
 
     @Override
