@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".QuizActivity"
-    android:background="@drawable/gradient_background">
+    style="@style/generalStyle"
+    android:background="@drawable/gradient_background"
+    tools:context=".QuizActivity">
 
-    <ScrollView
-        style="@style/generalStyle">
+    <ScrollView style="@style/generalStyle">
 
         <LinearLayout
             style="@style/generalStyle"
@@ -15,9 +13,9 @@
 
             <TextView
                 android:id="@+id/quiz_title"
-                android:text="@string/quiz_title"
                 style="@style/textTitleStyle"
-                android:textColor="@color/colorBlack"/>
+                android:text="@string/quiz_title"
+                android:textColor="@color/colorBlack" />
 
             <android.support.v7.widget.CardView
                 android:id="@+id/card_one"
@@ -28,20 +26,20 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:text="@string/question_one"
-                        style="@style/textQStyle"/>
+                        style="@style/textQStyle"
+                        android:text="@string/question_one" />
 
-                    <RadioGroup
-                        style="@style/radioGroupHor">
+                    <RadioGroup style="@style/radioGroupHor">
 
                         <RadioButton
-                            style="@style/generalViewStyle"
                             android:id="@+id/radio_true"
-                            android:text="@string/is_true"/>
-                        <RadioButton
                             style="@style/generalViewStyle"
+                            android:text="@string/is_true" />
+
+                        <RadioButton
                             android:id="@+id/radio_false"
-                            android:text="@string/is_false"/>
+                            style="@style/generalViewStyle"
+                            android:text="@string/is_false" />
 
                     </RadioGroup>
 
@@ -53,25 +51,31 @@
                 android:id="@+id/card_two"
                 style="@style/cardStyle">
 
-                <LinearLayout
-                    style="@style/linearLayoutStyle">
+                <LinearLayout style="@style/linearLayoutStyle">
 
                     <TextView
-                        android:text="@string/question_two"
-                        style="@style/textQStyle"/>
+                        style="@style/textQStyle"
+                        android:text="@string/question_two" />
 
-                    <CheckBox android:id="@+id/question_two_check_one"
+                    <CheckBox
+                        android:id="@+id/question_two_check_one"
                         style="@style/generalViewStyle"
-                        android:text="@string/two_answer_one"/>
-                    <CheckBox android:id="@+id/question_two_check_two"
+                        android:text="@string/two_answer_one" />
+
+                    <CheckBox
+                        android:id="@+id/question_two_check_two"
                         style="@style/generalViewStyle"
-                        android:text="@string/two_answer_two"/>
-                    <CheckBox android:id="@+id/question_two_check_three"
+                        android:text="@string/two_answer_two" />
+
+                    <CheckBox
+                        android:id="@+id/question_two_check_three"
                         style="@style/generalViewStyle"
-                        android:text="@string/two_answer_three"/>
-                    <CheckBox android:id="@+id/question_two_check_four"
+                        android:text="@string/two_answer_three" />
+
+                    <CheckBox
+                        android:id="@+id/question_two_check_four"
                         style="@style/generalViewStyle"
-                        android:text="@string/two_answer_four"/>
+                        android:text="@string/two_answer_four" />
 
                 </LinearLayout>
 
@@ -81,28 +85,33 @@
                 android:id="@+id/card_three"
                 style="@style/cardStyle">
 
-                <LinearLayout
-                    style="@style/linearLayoutStyle">
+                <LinearLayout style="@style/linearLayoutStyle">
 
                     <TextView
-                        android:text="@string/question_three"
-                        style="@style/textQStyle"/>
+                        style="@style/textQStyle"
+                        android:text="@string/question_three" />
 
-                    <RadioGroup
-                        style="@style/radioGroupVer">
+                    <RadioGroup style="@style/radioGroupVer">
 
-                        <RadioButton android:id="@+id/question_three_radio_one"
+                        <RadioButton
+                            android:id="@+id/question_three_radio_one"
                             style="@style/generalViewStyle"
-                            android:text="@string/questionThreeOptionOne"/>
-                        <RadioButton android:id="@+id/question_three_radio_two"
+                            android:text="@string/questionThreeOptionOne" />
+
+                        <RadioButton
+                            android:id="@+id/question_three_radio_two"
                             style="@style/generalViewStyle"
-                            android:text="@string/questionThreeOptionTwo"/>
-                        <RadioButton android:id="@+id/question_three_radio_three"
+                            android:text="@string/questionThreeOptionTwo" />
+
+                        <RadioButton
+                            android:id="@+id/question_three_radio_three"
                             style="@style/generalViewStyle"
-                            android:text="@string/questionThreeOptionThree"/>
-                        <RadioButton android:id="@+id/question_three_radio_four"
+                            android:text="@string/questionThreeOptionThree" />
+
+                        <RadioButton
+                            android:id="@+id/question_three_radio_four"
                             style="@style/generalViewStyle"
-                            android:text="@string/questionThreeOptionFour"/>
+                            android:text="@string/questionThreeOptionFour" />
 
                     </RadioGroup>
 
@@ -114,25 +123,28 @@
                 android:id="@+id/card_four"
                 style="@style/cardStyle">
 
-                <LinearLayout
-                    style="@style/linearLayoutStyle">
+                <LinearLayout style="@style/linearLayoutStyle">
 
                     <TextView
                         style="@style/textQStyle"
                         android:text="@string/question_four" />
 
-                    <RadioGroup
-                        style="@style/radioGroupVer">
+                    <RadioGroup style="@style/radioGroupVer">
 
-                        <RadioButton android:id="@+id/question_four_radio_one"
+                        <RadioButton
+                            android:id="@+id/question_four_radio_one"
                             style="@style/generalViewStyle"
-                            android:text="@string/questionFourOptionOne"/>
-                        <RadioButton android:id="@+id/question_four_radio_two"
+                            android:text="@string/questionFourOptionOne" />
+
+                        <RadioButton
+                            android:id="@+id/question_four_radio_two"
                             style="@style/generalViewStyle"
-                            android:text="@string/questionFourOptionTwo"/>
-                        <RadioButton android:id="@+id/question_four_radio_three"
+                            android:text="@string/questionFourOptionTwo" />
+
+                        <RadioButton
+                            android:id="@+id/question_four_radio_three"
                             style="@style/generalViewStyle"
-                            android:text="@string/questionFourOptionThree"/>
+                            android:text="@string/questionFourOptionThree" />
 
                     </RadioGroup>
 
@@ -144,24 +156,23 @@
                 android:id="@+id/card_five"
                 style="@style/cardStyle">
 
-                <LinearLayout
-                    style="@style/linearLayoutStyle">
+                <LinearLayout style="@style/linearLayoutStyle">
 
                     <ImageView
                         style="@style/imageStyle"
-                        android:src="@drawable/granite"
-                        android:contentDescription="@null"/>
+                        android:contentDescription="@null"
+                        android:src="@drawable/granite" />
 
                     <TextView
                         style="@style/textQStyle"
                         android:text="@string/question_five"
-                        android:textColor="@color/colorBlack"/>
+                        android:textColor="@color/colorBlack" />
 
                     <EditText
                         android:id="@+id/input_answer"
                         style="@style/editStyle"
                         android:hint="@string/questionFiveHint"
-                        android:textColorHighlight="@color/colorPrimary"/>
+                        android:textColorHighlight="@color/colorPrimary" />
 
                 </LinearLayout>
 
@@ -171,26 +182,29 @@
                 android:id="@+id/card_six"
                 style="@style/cardStyle">
 
-                <LinearLayout
-                    style="@style/linearLayoutStyle">
+                <LinearLayout style="@style/linearLayoutStyle">
 
                     <TextView
                         style="@style/textQStyle"
                         android:text="@string/question_six"
-                        android:textColor="@color/colorBlack"/>
+                        android:textColor="@color/colorBlack" />
 
-                    <RadioGroup
-                        style="@style/radioGroupVer">
+                    <RadioGroup style="@style/radioGroupVer">
 
-                        <RadioButton android:id="@+id/question_six_radio_one"
+                        <RadioButton
+                            android:id="@+id/question_six_radio_one"
                             style="@style/generalViewStyle"
-                            android:text="@string/questionSixOptionOne"/>
-                        <RadioButton android:id="@+id/question_six_radio_two"
+                            android:text="@string/questionSixOptionOne" />
+
+                        <RadioButton
+                            android:id="@+id/question_six_radio_two"
                             style="@style/generalViewStyle"
-                            android:text="@string/questionSixOptionTwo"/>
-                        <RadioButton android:id="@+id/question_six_radio_three"
+                            android:text="@string/questionSixOptionTwo" />
+
+                        <RadioButton
+                            android:id="@+id/question_six_radio_three"
                             style="@style/generalViewStyle"
-                            android:text="@string/questionSixOptionThree"/>
+                            android:text="@string/questionSixOptionThree" />
 
                     </RadioGroup>
 
@@ -202,23 +216,25 @@
                 android:id="@+id/card_seven"
                 style="@style/cardStyle">
 
-                <LinearLayout
-                    style="@style/linearLayoutStyle">
+                <LinearLayout style="@style/linearLayoutStyle">
 
                     <TextView
                         style="@style/textQStyle"
                         android:text="@string/question_seven"
-                        android:textColor="@color/colorBlack"/>
+                        android:textColor="@color/colorBlack" />
 
-                        <RadioGroup
-                            style="@style/radioGroupHor">
-                            <RadioButton android:id="@+id/seven_radio_true"
-                                style="@style/generalViewStyle"
-                                android:text="@string/is_true"/>
-                            <RadioButton android:id="@+id/seven_radio_false"
-                                style="@style/generalViewStyle"
-                                android:text="@string/is_false"/>
-                        </RadioGroup>
+                    <RadioGroup style="@style/radioGroupHor">
+
+                        <RadioButton
+                            android:id="@+id/seven_radio_true"
+                            style="@style/generalViewStyle"
+                            android:text="@string/is_true" />
+
+                        <RadioButton
+                            android:id="@+id/seven_radio_false"
+                            style="@style/generalViewStyle"
+                            android:text="@string/is_false" />
+                    </RadioGroup>
 
                 </LinearLayout>
 
@@ -228,27 +244,33 @@
                 android:id="@+id/card_eight"
                 style="@style/cardStyle">
 
-                <LinearLayout
-                    style="@style/linearLayoutStyle">
+                <LinearLayout style="@style/linearLayoutStyle">
 
                     <TextView
                         style="@style/textQStyle"
                         android:text="@string/question_eight"
-                        android:textColor="@color/colorBlack"/>
+                        android:textColor="@color/colorBlack" />
 
-                    <CheckBox android:id="@+id/question_eight_check_one"
+                    <CheckBox
+                        android:id="@+id/question_eight_check_one"
                         style="@style/generalViewStyle"
-                        android:text="@string/eight_answer_one"/>
-                    <CheckBox android:id="@+id/question_eight_check_two"
+                        android:text="@string/eight_answer_one" />
+
+                    <CheckBox
+                        android:id="@+id/question_eight_check_two"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/eight_answer_two"/>
-                    <CheckBox android:id="@+id/question_eight_check_three"
+                        android:text="@string/eight_answer_two" />
+
+                    <CheckBox
+                        android:id="@+id/question_eight_check_three"
                         style="@style/generalViewStyle"
-                        android:text="@string/eight_answer_three"/>
-                    <CheckBox android:id="@+id/question_eight_check_four"
+                        android:text="@string/eight_answer_three" />
+
+                    <CheckBox
+                        android:id="@+id/question_eight_check_four"
                         style="@style/generalViewStyle"
-                        android:text="@string/eight_answer_four"/>
+                        android:text="@string/eight_answer_four" />
 
                 </LinearLayout>
 
@@ -258,25 +280,29 @@
                 android:id="@+id/card_nine"
                 style="@style/cardStyle">
 
-                <LinearLayout
-                    style="@style/linearLayoutStyle">
+                <LinearLayout style="@style/linearLayoutStyle">
 
                     <TextView
                         style="@style/textQStyle"
                         android:text="@string/question_nine"
-                        android:textColor="@color/colorBlack"/>
+                        android:textColor="@color/colorBlack" />
 
-                    <RadioGroup
-                        style="@style/radioGroupVer">
-                        <RadioButton android:id="@+id/question_nine_radio_one"
+                    <RadioGroup style="@style/radioGroupVer">
+
+                        <RadioButton
+                            android:id="@+id/question_nine_radio_one"
                             style="@style/generalViewStyle"
-                            android:text="@string/questionNineOptionOne"/>
-                        <RadioButton android:id="@+id/question_nine_radio_two"
+                            android:text="@string/questionNineOptionOne" />
+
+                        <RadioButton
+                            android:id="@+id/question_nine_radio_two"
                             style="@style/generalViewStyle"
-                            android:text="@string/questionNineOptionTwo"/>
-                        <RadioButton android:id="@+id/question_nine_radio_three"
+                            android:text="@string/questionNineOptionTwo" />
+
+                        <RadioButton
+                            android:id="@+id/question_nine_radio_three"
                             style="@style/generalViewStyle"
-                            android:text="@string/questionNineOptionThree"/>
+                            android:text="@string/questionNineOptionThree" />
                     </RadioGroup>
 
                 </LinearLayout>
@@ -287,25 +313,29 @@
                 android:id="@+id/card_ten"
                 style="@style/cardStyle">
 
-                <LinearLayout
-                    style="@style/linearLayoutStyle">
+                <LinearLayout style="@style/linearLayoutStyle">
 
                     <TextView
                         style="@style/textQStyle"
                         android:text="@string/question_ten"
-                        android:textColor="@color/colorBlack"/>
+                        android:textColor="@color/colorBlack" />
 
-                    <RadioGroup
-                        style="@style/radioGroupVer">
-                        <RadioButton android:id="@+id/question_ten_radio_one"
+                    <RadioGroup style="@style/radioGroupVer">
+
+                        <RadioButton
+                            android:id="@+id/question_ten_radio_one"
                             style="@style/generalViewStyle"
-                            android:text="@string/questionTenOptionOne"/>
-                        <RadioButton android:id="@+id/question_ten_radio_two"
+                            android:text="@string/questionTenOptionOne" />
+
+                        <RadioButton
+                            android:id="@+id/question_ten_radio_two"
                             style="@style/generalViewStyle"
-                            android:text="@string/questionTenOptionTwo"/>
-                        <RadioButton android:id="@+id/question_ten_radio_three"
+                            android:text="@string/questionTenOptionTwo" />
+
+                        <RadioButton
+                            android:id="@+id/question_ten_radio_three"
                             style="@style/generalViewStyle"
-                            android:text="@string/questionTenOptionThree"/>
+                            android:text="@string/questionTenOptionThree" />
 
                     </RadioGroup>
 
@@ -314,15 +344,12 @@
             </android.support.v7.widget.CardView>
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#696969"
-                android:textStyle="bold"
-                android:textColor="#C0C0C0"
-                android:text="@string/btn_string"
-                android:textSize="14sp"
+                android:id="@+id/sub_button"
                 android:onClick="checkScores"
-                />
+                android:text="@string/btn_string"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@color/colorAccent"
+                style="@style/buttonStyle"/>
 
         </LinearLayout>
 

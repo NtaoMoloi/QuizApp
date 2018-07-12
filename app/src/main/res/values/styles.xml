@@ -8,6 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--Default styling for all card_views-->
     <style name="cardStyle" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
@@ -17,6 +18,7 @@
         <item name="android:layout_margin">10dp</item>
     </style>
 
+    <!--Styling for the quiz_title text_view-->
     <style name="textTitleStyle" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
@@ -26,6 +28,7 @@
         <item name="android:padding">20dp</item>
     </style>
 
+    <!--Default styling for all text_views with questions-->
     <style name="textQStyle" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -35,6 +38,7 @@
         <item name="android:textSize">18sp</item>
     </style>
 
+    <!--Default styling for all radio_groups with horizontal orientation-->
     <style name="radioGroupHor" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -44,13 +48,17 @@
         <item name="android:paddingBottom">10dp</item>
     </style>
 
+    <!--Default styling for all radio_groups with vertical orientation-->
     <style name="radioGroupVer" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">vertical</item>
         <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
     </style>
 
+    <!--Linear_layout styling-->
     <style name="linearLayoutStyle" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
@@ -60,16 +68,19 @@
         <item name="android:paddingBottom">10dp</item>
     </style>
 
+    <!--Default styling for all parent_views-->
     <style name="generalStyle" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
     </style>
 
+    <!--Default width and height for child_views-->
     <style name="generalViewStyle" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
 
+    <!--Default styling for all edit_text-->
     <style name="editStyle" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
@@ -80,6 +91,7 @@
         <item name="android:maxLength">8</item>
     </style>
 
+    <!--Default styling for all image_views-->
     <style name="imageStyle" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
@@ -87,6 +99,17 @@
         <item name="android:scaleY">0.5</item>
         <item name="android:scaleType">fitXY</item>
         <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+    </style>
+
+    <!--Default width and height for child_views-->
+    <style name="buttonStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+
     </style>
 
 </resources>

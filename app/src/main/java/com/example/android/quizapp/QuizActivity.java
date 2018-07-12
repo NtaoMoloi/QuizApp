@@ -4,8 +4,8 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.CardView;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 public class QuizActivity extends AppCompatActivity {
 
-    int score = 0;
+    int score;
     String userAnswer;
     Intent initiateIntent;
 
@@ -27,6 +27,9 @@ public class QuizActivity extends AppCompatActivity {
         TextView textView = findViewById(R.id.quiz_title);
         Typeface typeface = Typeface.createFromAsset(getAssets(), "fonts/Hometown.ttf");
         textView.setTypeface(typeface);
+
+        Button submitButton = findViewById(R.id.sub_button);
+        submitButton.getBackground().setAlpha(150);
     }
 
     /* This method checks if the user checked the correct answers for question one,
