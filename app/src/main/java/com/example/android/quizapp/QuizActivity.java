@@ -213,7 +213,7 @@ private void questionTwoCheck() {
     }
 
 
-    /* This method shows a toast that displays the scores added by the addScores method and
+    /* This method shows a toast that displays the total added scores and
     * starts the activity afresh */
 
     public void checkScores(View v) {
