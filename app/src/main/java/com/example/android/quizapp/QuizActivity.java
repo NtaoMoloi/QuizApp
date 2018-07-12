@@ -218,7 +218,7 @@ private void questionTwoCheck() {
 
     public void checkScores(View v) {
         addScores();
-        Toast.makeText(this, "Your score is " + score + " out of 10", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Your score is " + score + " out of 10", Toast.LENGTH_LONG).show();
         finish();
         startActivity(initiateIntent);
     }
