@@ -40,4 +40,5 @@
     <string name="questionTenOptionTwo">2.5 billion years</string>
     <string name="questionTenOptionThree">8.5 billion years</string>
     <string name="btn_string">Submit</string>
+    <string name="edit_error">please answer</string>string>
 </resources>

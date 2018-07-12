@@ -259,7 +259,9 @@
                         android:hint="@string/questionFiveHint"
                         android:paddingStart="20dp"
                         android:paddingBottom="10dp"
-                        android:paddingEnd="20dp"/>
+                        android:paddingEnd="20dp"
+                        android:maxLength="8"
+                        android:textColorHighlight="@color/colorPrimary"/>
 
                 </LinearLayout>
 
