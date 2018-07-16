@@ -15,7 +15,6 @@ import android.widget.Toast;
 public class QuizActivity extends AppCompatActivity {
 
     int score;
-    String userAnswer;
     Intent initiateIntent;
 
     @Override
@@ -33,39 +32,36 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     /* This method checks if the user checked the correct answers for question one,
-     * if correct the score adds a point */
+     * correct answer = True */
 
     private void questionOneRadioCheck() {
         RadioButton tRadioButton = findViewById(R.id.radio_true);
         RadioButton fRadioButton = findViewById(R.id.radio_false);
-        boolean checkedTrue = tRadioButton.isChecked();
-        boolean checkedFalse = fRadioButton.isChecked();
-        if (checkedTrue) {
+        if (tRadioButton.isChecked()) {
             score += 1;
-        }else if (checkedFalse) {
+        }else if (fRadioButton.isChecked()) {
             score += 0;
         }
     }
 
     /* This method checks if the user checked the correct answers for question two,
-     * if correct the score adds a point */
+     * correct answers = Metamorphic, Sedimentary, Igneous */
 
 private void questionTwoCheck() {
         CheckBox twoCheckBoxOne = findViewById(R.id.question_two_check_one);
         CheckBox twoCheckBoxTwo = findViewById(R.id.question_two_check_two);
         CheckBox twoCheckBoxThree = findViewById(R.id.question_two_check_three);
         CheckBox twoCheckBoxFour = findViewById(R.id.question_two_check_four);
-        if (!twoCheckBoxOne.isChecked() && twoCheckBoxThree.isChecked() && twoCheckBoxFour.isChecked()) {
-            score += 0;
-        } else if (twoCheckBoxTwo.isChecked()) {
-            score += 0;
-        }else {
+        if (twoCheckBoxOne.isChecked() && twoCheckBoxThree.isChecked() && twoCheckBoxFour.isChecked()) {
             score += 1;
         }
-    }
+        else if (twoCheckBoxTwo.isChecked()) {
+            score = 0;
+        }
+}
 
     /* This method checks if the user checked the correct answers for question three,
-     * if correct the score adds a point */
+     * correct answer = Most rocks are a mixture if minerals */
 
     private void questionThreeRadioCheck() {
         RadioButton q3rd1 = findViewById(R.id.question_three_radio_one);
@@ -85,7 +81,7 @@ private void questionTwoCheck() {
     }
 
     /* This method checks if the user checked the correct answers for question four,
-     * if correct the score adds a point */
+     * correct answer = Heat and Pressure */
 
     private void questionFourRadioCheck() {
         RadioButton q4rd1 = findViewById(R.id.question_four_radio_one);
@@ -103,12 +99,14 @@ private void questionTwoCheck() {
     }
 
     /* This method checks if the user checked the correct answers for question five,
-     * if correct the score adds a point */
+     * correct answer = Granite */
 
     private void questionFiveEditText() {
+        String userAnswer;
+
         EditText inputText = findViewById(R.id.input_answer);
         userAnswer = inputText.getText().toString();
-        if (userAnswer.equalsIgnoreCase("granite")) {
+        if (userAnswer.trim().equalsIgnoreCase("granite")) {
             score += 1;
         } else {
             score += 0;
@@ -116,7 +114,7 @@ private void questionTwoCheck() {
     }
 
     /* This method checks if the user checked the correct answers for question six,
-     * if correct the score adds a point */
+     * correct answer = Magma */
 
     private void questionSixRadioCheck() {
         RadioButton q6rd1 = findViewById(R.id.question_six_radio_one);
@@ -134,7 +132,7 @@ private void questionTwoCheck() {
     }
 
     /* This method checks if the user checked the correct answers for question seven,
-     * if correct the score adds a point */
+     * correct answer = False */
 
     private void questionSevenRadioCheck() {
         RadioButton RadioButtonTrue = findViewById(R.id.seven_radio_true);
@@ -149,7 +147,7 @@ private void questionTwoCheck() {
     }
 
     /* This method checks if the user checked the correct answers for question eight,
-     * if correct the score adds a point */
+     * correct answers = Gneiss and Basalt*/
 
     private void questionEightCheck() {
         CheckBox eightCheckBoxOne = findViewById(R.id.question_eight_check_one);
@@ -164,7 +162,7 @@ private void questionTwoCheck() {
     }
 
     /* This method checks if the user checked the correct answers for question nine,
-     * if correct the score adds a point */
+     * correct answer = Seismology */
 
     private void questionNineRadioCheck() {
         RadioButton q9rd1 = findViewById(R.id.question_nine_radio_one);
@@ -182,7 +180,7 @@ private void questionTwoCheck() {
     }
 
     /* This method checks if the user checked the correct answers for question ten,
-     * if correct the score adds a point */
+     * correct answer = 4.6 Billion Years */
 
     private void questionTenRadioCheck() {
         RadioButton q10rd1 = findViewById(R.id.question_ten_radio_one);
@@ -201,7 +199,7 @@ private void questionTwoCheck() {
 
     /* This method adds all the scores for the previous questions */
 
-    private void addScores() {
+    private int addScores() {
         score = 0;
         questionOneRadioCheck();
         questionTwoCheck();
@@ -213,17 +211,39 @@ private void questionTwoCheck() {
         questionEightCheck();
         questionNineRadioCheck();
         questionTenRadioCheck();
+
+        return score;
     }
 
 
-    /* This method shows a toast that displays the total added scores and
-    * starts the activity afresh */
+    /* This method displays scores*/
 
     public void checkScores(View v) {
-        addScores();
-        Toast.makeText(this, "Your score is " + score + " out of 10", Toast.LENGTH_LONG).show();
+        showResults(addScores());
         finish();
         startActivity(initiateIntent);
     }
 
+    /* This method displays the relevant toast according to score */
+
+    public void showResults(int score) {
+        if (score <= 1) {
+            Toast.makeText(this, "You scored " + score +", please try again :)", Toast.LENGTH_LONG).show();
+        }
+        else if (score <= 4) {
+            Toast.makeText(this, "Your scored " + score + " points, won't you try again? ", Toast.LENGTH_LONG).show();
+        }
+        else if (score == 5) {
+            Toast.makeText(this, "You are doing great, you scored " + score + " points, won't you try again? ", Toast.LENGTH_LONG).show();
+        }
+        else if (score == 6 || score == 7) {
+            Toast.makeText(this, "Nice!! just half way there, you scored " + score + " points. ", Toast.LENGTH_LONG).show();
+        }
+        else if (score == 8 || score == 9) {
+            Toast.makeText(this, "Too close!! You scored " + score + " points, well done!! ", Toast.LENGTH_LONG).show();
+        }
+        else if (score == 10) {
+            Toast.makeText(this, "WhooHoo!! Genius!!!!, You scored :" + score + " points :) ", Toast.LENGTH_LONG).show();
+        }
+    }
 }
