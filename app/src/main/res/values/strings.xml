@@ -9,10 +9,10 @@
     <string name="two_answer_three">Sedimentary</string>
     <string name="two_answer_four">Igneous</string>
     <string name="questionThreeOptionOne">Rocks are composed of only one mineral.</string>
-    <string name="questionThreeOptionTwo">Rocks do not contain minerals.</string>
-    <string name="questionThreeOptionThree">Coal is not considered a rock.</string>
-    <string name="questionThreeOptionFour">Most rocks are a mixture of minerals.</string>
-    <string name="question_three">Which of the following is TRUE about Rocks.</string>
+    <string name="questionThreeOptionTwo">Rocks do not contain minerals</string>
+    <string name="questionThreeOptionThree">Coal is not considered a rock</string>
+    <string name="questionThreeOptionFour">Most rocks are a mixture of minerals</string>
+    <string name="question_three">Which of the following is TRUE about Rocks</string>
     <string name="quiz_title">Geology Quiz</string>
     <string name="question_four">The process by which metamorphic rocks are formed.</string>
     <string name="question_five">The rock shown above is called?</string>
@@ -26,7 +26,7 @@
     <string name="questionSixOptionThree">Magma</string>
     <string name="question_six">Molten rock below the Earth\'s surface.</string>
     <string name="question_seven">Stalactites are convex deposits that grow upward.</string>
-    <string name="question_eight">Which of the following Rock Types are Igneous Rocks.</string>
+    <string name="question_eight">Which of the following Rock Types are Igneous Rocks..</string>
     <string name="eight_answer_one">Sandstone</string>
     <string name="eight_answer_two">Marble</string>
     <string name="eight_answer_three">Gneiss</string>
