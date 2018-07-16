@@ -22,7 +22,7 @@
                 style="@style/cardStyle">
 
                 <LinearLayout
-                    style="@style/generalStyle"
+                    style="@style/linearLayoutStyle"
                     android:orientation="vertical">
 
                     <TextView
@@ -258,8 +258,7 @@
 
                     <CheckBox
                         android:id="@+id/question_eight_check_two"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/generalViewStyle"
                         android:text="@string/eight_answer_two" />
 
                     <CheckBox
