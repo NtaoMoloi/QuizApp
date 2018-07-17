@@ -7,7 +7,7 @@ This project is a solution Quiz App for the Andela Learning Community (ALC)|| Ud
  This Quiz App contains a total of 10 simple questions about geology.
  
  <h3>SCREENSHOT</h3>
- <img src="https://github.com/NtaoMoloi/QuizApp/blob/master/Screenshot_1530306894.png" width="300" height="500">
+ <img src="https://github.com/NtaoMoloi/QuizApp/blob/master/screenshots/Screenshot_new.png" width="300" height="500">
  
 <a href="https://drive.google.com/open?id=1tDQqSXG7IEjKbIJLLJcWo8Msm8qJdeO4">Download the apk here!</a>
  
