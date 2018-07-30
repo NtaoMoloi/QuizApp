@@ -1,6 +1,6 @@
 <h3>GEOLOGY QUIZ APP</h3>
 
-This project is a solution Quiz App for the Andela Learning Community (ALC)|| Udacity #7DaysofCodeChallenge
+This project is a solution to Project: Quiz App (Lesson 12) of the Google Africa Challenge Scholarship.
 
 <h3>DESCRIPTION</h3>
 
