@@ -178,22 +178,22 @@ private void questionTwoCheck() {
 
     public void showResults(int score) {
         if (score <= 1) {
-            Toast.makeText(this, "You scored " + score +", please try again :)", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.score) + score + getString(R.string.tryAgain), Toast.LENGTH_LONG).show();
         }
         else if (score <= 4) {
-            Toast.makeText(this, "Your scored " + score + " points, won't you try again? ", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.score) + score + getString(R.string.tryAgain), Toast.LENGTH_LONG).show();
         }
         else if (score == 5) {
-            Toast.makeText(this, "You are doing great, you scored " + score + " points, won't you try again? ", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.score) + score + getString(R.string.tryAgain), Toast.LENGTH_LONG).show();
         }
         else if (score == 6 || score == 7) {
-            Toast.makeText(this, "Nice! You scored " + score + " points. ", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.score) + score + getString(R.string.tryAgain), Toast.LENGTH_LONG).show();
         }
         else if (score == 8 || score == 9) {
-            Toast.makeText(this, "Too close! You scored " + score + " points, well done!! ", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.score) + score + getString(R.string.congrats), Toast.LENGTH_LONG).show();
         }
         else if (score == 10) {
-            Toast.makeText(this, "Genius! You scored " + score + " points :) ", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.score) + score + getString(R.string.congrats), Toast.LENGTH_LONG).show();
         }
     }
 }

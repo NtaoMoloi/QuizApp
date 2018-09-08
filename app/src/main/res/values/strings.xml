@@ -51,4 +51,9 @@
     <string name="questionTenOptionThree">8.5 billion years</string>
 
     <string name="btn_string">Submit</string>
+
+    <string name="score">"You scored "</string>
+    <string name="tryAgain">", won\'t you try again?"</string>
+    <string name="congrats">", congratulations! :)"</string>
+
 </resources>
