@@ -1,43 +1,54 @@
 <resources>
     <string name="app_name">Quiz App</string>
+    <string name="quiz_title">Geology Quiz</string>
+
     <string name="question_one">Geology is the scientific study of the Earth.</string>
     <string name="is_true">True</string>
     <string name="is_false">False</string>
-    <string name="question_two">The three main classes of Rocks.</string>
+
+    <string name="question_two">The three main classes of rocks.</string>
     <string name="two_answer_one">Metamorphic</string>
     <string name="two_answer_two">Fossil</string>
     <string name="two_answer_three">Sedimentary</string>
     <string name="two_answer_four">Igneous</string>
+
+    <string name="question_three">Which of the following is TRUE about Rocks</string>
     <string name="questionThreeOptionOne">Rocks are composed of only one mineral.</string>
     <string name="questionThreeOptionTwo">Rocks do not contain minerals</string>
     <string name="questionThreeOptionThree">Coal is not considered a rock</string>
     <string name="questionThreeOptionFour">Most rocks are a mixture of minerals</string>
-    <string name="question_three">Which of the following is TRUE about Rocks</string>
-    <string name="quiz_title">Geology Quiz</string>
+
     <string name="question_four">The process by which metamorphic rocks are formed.</string>
-    <string name="question_five">The rock shown above is called?</string>
-    <string name="questionFiveHint">Type your answer here..</string>
     <string name="questionFourOptionOne">Heat and Pressure</string>
     <string name="questionFourOptionTwo">Compaction and Cementation</string>
     <string name="questionFourOptionThree">Melting and Cooling</string>
+
+    <string name="question_five">The rock shown above is called?</string>
+    <string name="questionFiveHint">Type your answer here..</string>
     <string name="questionFiveAnswer">Granite</string>
+
+    <string name="question_six">Molten rock below the Earth\'s surface.</string>
     <string name="questionSixOptionOne">Lava</string>
     <string name="questionSixOptionTwo">Glacier</string>
     <string name="questionSixOptionThree">Magma</string>
-    <string name="question_six">Molten rock below the Earth\'s surface.</string>
+
     <string name="question_seven">Stalactites are convex deposits that grow upward.</string>
-    <string name="question_eight">Which of the following Rock Types are Igneous Rocks..</string>
+
+    <string name="question_eight">Which of the following rock types are Igneous rocks.</string>
     <string name="eight_answer_one">Sandstone</string>
     <string name="eight_answer_two">Marble</string>
     <string name="eight_answer_three">Gneiss</string>
     <string name="eight_answer_four">Basalt</string>
+
+    <string name="question_nine">The scientific study of Earthquakes.</string>
     <string name="questionNineOptionOne">Oceanology</string>
     <string name="questionNineOptionTwo">Seismology</string>
     <string name="questionNineOptionThree">Paleontology</string>
-    <string name="question_nine">The scientific study of Earthquakes.</string>
+
     <string name="question_ten">How old is Earth?</string>
     <string name="questionTenOptionOne">4.6 billion years</string>
     <string name="questionTenOptionTwo">2.5 billion years</string>
     <string name="questionTenOptionThree">8.5 billion years</string>
+
     <string name="btn_string">Submit</string>
 </resources>
